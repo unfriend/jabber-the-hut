@@ -95,7 +95,7 @@ def html_title(bot, msg):
             continue
         if document_title:
             netloc = urlparse(url).netloc
-            messages.append("{} · {}".format(document_title, netloc))
+            messages.append("{} · {}".format(document_title))
     seen[:-10] = []
     return messages
 
